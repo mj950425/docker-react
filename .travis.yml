@@ -10,7 +10,7 @@ before_install:
   - docker build -t minjoon/docker-react -f Dockerfile.dev ./
 
 script:
-  - docker run -e CI=ture minjoon/docker-ract npm run test -- --coverage
+  - docker run -e CI=ture minjoon/docker-react npm run test -- --coverage
 
 after_success:
   - echo "Test Success"
