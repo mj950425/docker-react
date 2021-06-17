@@ -7,7 +7,7 @@ services:
 
 before_install:
   - echo "start Creating an image with dockerfile"
-  - docker build -t minjoon/docker-react -f Dockerfile.dev ./
+  - docker build -t minjoon/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=ture minjoon/docker-react npm run test -- --coverage
