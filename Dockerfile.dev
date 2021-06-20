@@ -10,4 +10,4 @@ COPY ./ ./
 
 ENV CHOKIDAR_USEPOLLING=true
 
-RUN ["npm", "run", "start"]
+CMD ["npm", "run", "start"]
